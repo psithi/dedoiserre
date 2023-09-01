@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector(`[data-id="01"]`).classList.toggle('active');
         document.getElementById('01').classList.toggle('active');
 
+        window.location.href="#logo";
+
         const interval = setInterval(function () {
             const lineID = i.toString().padStart(2, '0');
             const div = document.getElementById(lineID);
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function(){
             if (i > 15) {
                 clearInterval(interval);
             }
+            window.location.href="#logo";
         }, 20000);
     });
 });
