@@ -1,0 +1,3357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!-- 
+
+                               .__           .__                                     .__                ._.
+    ______  _________.__. ____ |  |__   ____ |  |   ____   ____ ___.__. _______ __ __|  |   ____   _____| |
+    \____ \/  ___<   |  |/ ___\|  |  \ /  _ \|  |  /  _ \ / ___<   |  | \_  __ \  |  \  | _/ __ \ /  ___/ |
+    |  |_> >___ \ \___  \  \___|   Y  (  <_> )  |_(  <_> ) /_/  >___  |  |  | \/  |  /  |_\  ___/ \___ \ \|
+    |   __/____  >/ ____|\___  >___|  /\____/|____/\____/\___  // ____|  |__|  |____/|____/\___  >____  >__
+    |__|       \/ \/         \/     \/                  /_____/ \/                             \/     \/ \/
+
+    Criado por um psicólogo que não sabe codar, com a intenção de tornar acessível este material para estudo.
+    (não me processem, eu sou pobre)
+    
+ -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Teste Psicológico</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoBar"></div>
+        <div class="logoCircle">
+            <img src="./Icons/logo01.svg" alt="" class="logoSVG">
+        </div>
+        <div class="coverTint"></div>
+        <div class="cover">
+            <img src="./Imagens/d2-R-cover-otB.jpg" alt="">
+        </div>
+        <div class="title">
+            <h1>D2-R</h1>
+            <h2>atenção concentrada e sustentada</h2>
+        </div>
+    </header>
+    <main>
+        <form id="checkform">
+            <div class="line-header">
+                <button class="lines active" data-id="00" type="button">&gt;</button>
+                <button class="lines" data-id="01" type="button">01</button>
+                <button class="lines" data-id="02" type="button">02</button>
+                <button class="lines" data-id="03" type="button">03</button>
+                <button class="lines" data-id="04" type="button">04</button>
+                <button class="lines" data-id="05" type="button">05</button>
+                <button class="lines" data-id="06" type="button">06</button>
+                <button class="lines" data-id="07" type="button">07</button>
+                <button class="lines" data-id="08" type="button">08</button>
+                <button class="lines" data-id="09" type="button">09</button>
+                <button class="lines" data-id="10" type="button">10</button>
+                <button class="lines" data-id="11" type="button">11</button>
+                <button class="lines" data-id="12" type="button">12</button>
+                <button class="lines" data-id="13" type="button">13</button>
+                <button class="lines" data-id="14" type="button">14</button>
+                <button class="lines" data-id="15" type="button">&lt;</button>
+            </div>
+            <div class="lineItems active" id="00">
+                <div class="itemsContainer">
+                    <div class="itemsIntro">
+                        <div class="itemsRiscar">
+                            <p><span>Riscar</span> toda letra d que tiver dois traços:</p>
+                            <div class="itemsRiscar-box">
+                                <div class="lineItems-box">
+                                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemsRiscar">
+                            <p><span>Não riscar</span> todo o restante:</p>
+                            <div class="itemsRiscar-box">
+                                <div class="lineItems-box">
+                                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                                </div>
+                                <div class="lineItems-box">
+                                    <img src="./Letras/NPup2do1.png" alt="" class="checkImg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="startContainer">
+                        <button class="startBtn" type="button">iniciar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lineItems" id="01">
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="02">
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="03">
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="04">
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="05">
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="06">
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="07">
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="08">
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="09">
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="10">
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="11">
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="12">
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="13">
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="14">
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDot2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDdo1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Ydo.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yup.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPdo2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup2do1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1do2.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NDup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/NPup1.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+                <div class="lineItems-box">
+                    <img src="./Letras/Yot.png" alt="" class="checkImg">
+                    <input type="checkbox" class="checkBox">
+                </div>
+            </div>
+            <div class="lineItems" id="15">
+                <div class="resultContainer">
+                    <div class="resultIntro">
+                        <h2>Resultados</h2>
+                        <textarea name="resultArea" id="resultAreaID" cols="7" rows="7"></textarea>
+                        <div class="resultBtns">
+                            <button class="resultBtn" type="submit">
+                                calcular
+                            </button>
+                            <button class="copyBtn">
+                                copiar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="aviso">
+            sua tela é muito pequena! ponha o celular na horzintal
+        </div>
+        <footer>
+            
+        </footer>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
