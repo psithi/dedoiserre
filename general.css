@@ -27,8 +27,9 @@ body {
     height: 100dvh;
 }
 
-.logoBar {
-    /* width: 100dvw; */
+
+
+.logoBar {    
     height: 1.3rem;
     background: var(--clr-medium);
     border-bottom: 0.4rem double var(--clr-bright);
@@ -120,6 +121,7 @@ h2 {
     margin-top: 0.4rem;
     transform: scale(1.03);
     font-weight: 500;
+    /* color: var(--clr-bright); */
     color: #E0A469;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.25);
 }
@@ -165,9 +167,7 @@ h2 {
 
 .checkBox {
     transform: scale(1.2);
-    margin: 0.3rem;
-    display: flex;
-    align-items: center;
+    margin: 0.3rem;    
 }
 
 .itemsContainer {
@@ -192,8 +192,7 @@ h2 {
 }
 
 .itemsRiscar {
-    display: grid;
-    /* grid-template-rows: 1fr 1fr;     */
+    display: grid;    
     height: 25rem;
     margin: 6% 0;
     border: 0.1rem solid var(--clr-medium);
@@ -238,11 +237,10 @@ h2 {
     transition: all 0.5s ease-in;
     pointer-events: none;
     position: absolute;
-    width: 97.7%;
+    width: 100%;
 }
 
-.lineItems.active {
-    display: grid;
+.lineItems.active {    
     opacity: 1;
     transition-delay: 0.25s;
     pointer-events: all;
