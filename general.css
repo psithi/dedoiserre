@@ -363,8 +363,13 @@ h2 {
     }
 }
 
+.aviso{
+    display: none;
+}
+
 @media screen and (max-width: 350px) {
     .aviso {
+        display: block;
         left: 50%;
         transform: translateX(-50%);
         background-color: red;
